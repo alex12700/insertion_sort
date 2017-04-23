@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.Pane?>
@@ -9,147 +15,180 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<GridPane alignment="center" hgap="10" prefHeight="450.0" prefWidth="600.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <columnConstraints>
+      <ColumnConstraints />
       <ColumnConstraints />
       <ColumnConstraints />
    </columnConstraints>
    <rowConstraints>
       <RowConstraints />
       <RowConstraints />
+      <RowConstraints />
    </rowConstraints>
    <children>
-      <GridPane alignment="center" hgap="10" vgap="10" GridPane.columnIndex="1" GridPane.rowIndex="1">
+      <GridPane alignment="center" hgap="10" vgap="10" GridPane.columnIndex="2" GridPane.rowIndex="2">
 </GridPane>
-      <Pane prefHeight="400.0" prefWidth="600.0">
-         <children>
-            <Pane layoutY="14.0" prefHeight="100.0" prefWidth="600.0">
-               <children>
-                  <Rectangle fx:id="rect1_5" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="250.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
-                  <Rectangle fx:id="rect1_6" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="300.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
-                  <Rectangle fx:id="rect1_7" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="350.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
-                  <Rectangle fx:id="rect1_4" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="200.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
-                  <Rectangle fx:id="rect1_3" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="150.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
-                  <Rectangle fx:id="rect1_2" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="100.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
-                  <Rectangle fx:id="rect1_1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
-                  <Rectangle fx:id="rect1_8" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="400.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
-                  <Rectangle fx:id="rect1_9" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="450.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
-                  <Rectangle fx:id="rect1_10" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="500.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
-                  <Rectangle fx:id="rect2_5" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="250.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="50.0" />
-                  <Rectangle fx:id="rect2_6" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="300.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="50.0" />
-                  <Rectangle fx:id="rect2_7" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="350.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="50.0" />
-                  <Rectangle fx:id="rect2_4" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="200.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="50.0" />
-                  <Rectangle fx:id="rect2_3" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="150.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="50.0" />
-                  <Rectangle fx:id="rect2_2" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="100.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="50.0" />
-                  <Rectangle fx:id="rect2_1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="50.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="50.0" />
-                  <Rectangle fx:id="rect2_8" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="400.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="50.0" />
-                  <Rectangle fx:id="rect2_9" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="450.0" layoutY="51.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="50.0" />
-                  <Rectangle fx:id="rect2_10" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="500.0" layoutY="51.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="50.0" />
-                  <Text fx:id="text1_1" layoutX="50.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" wrappingWidth="50.0">
-                     <font>
-                        <Font size="19.0" />
-                     </font>
-                  </Text>
-                  <Text fx:id="text1_2" layoutX="100.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" wrappingWidth="50.0">
-                     <font>
-                        <Font size="19.0" />
-                     </font>
-                  </Text>
-                  <Text fx:id="text1_3" layoutX="150.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" wrappingWidth="50.0">
-                     <font>
-                        <Font size="19.0" />
-                     </font>
-                  </Text>
-                  <Text fx:id="text1_4" layoutX="200.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" wrappingWidth="50.0">
-                     <font>
-                        <Font size="19.0" />
-                     </font>
-                  </Text>
-                  <Text fx:id="text1_5" layoutX="250.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" wrappingWidth="50.0">
-                     <font>
-                        <Font size="19.0" />
-                     </font>
-                  </Text>
-                  <Text fx:id="text1_6" layoutX="300.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" wrappingWidth="50.0">
-                     <font>
-                        <Font size="19.0" />
-                     </font>
-                  </Text>
-                  <Text fx:id="text1_7" layoutX="350.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" wrappingWidth="50.0">
-                     <font>
-                        <Font size="19.0" />
-                     </font>
-                  </Text>
-                  <Text fx:id="text1_8" layoutX="400.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" wrappingWidth="50.0">
-                     <font>
-                        <Font size="19.0" />
-                     </font>
-                  </Text>
-                  <Text fx:id="text1_9" layoutX="450.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" wrappingWidth="50.0">
-                     <font>
-                        <Font size="19.0" />
-                     </font>
-                  </Text>
-                  <Text fx:id="text1_10" layoutX="500.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" wrappingWidth="50.0">
-                     <font>
-                        <Font size="19.0" />
-                     </font>
-                  </Text>
-                  <Text fx:id="text2_1" layoutX="50.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" visible="false" wrappingWidth="50.0">
-                     <font>
-                        <Font size="19.0" />
-                     </font>
-                  </Text>
-                  <Text fx:id="text2_2" layoutX="100.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" visible="false" wrappingWidth="50.0">
-                     <font>
-                        <Font size="19.0" />
-                     </font>
-                  </Text>
-                  <Text fx:id="text2_3" layoutX="150.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" visible="false" wrappingWidth="50.0">
-                     <font>
-                        <Font size="19.0" />
-                     </font>
-                  </Text>
-                  <Text fx:id="text2_4" layoutX="200.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" visible="false" wrappingWidth="50.0">
-                     <font>
-                        <Font size="19.0" />
-                     </font>
-                  </Text>
-                  <Text fx:id="text2_5" layoutX="250.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" visible="false" wrappingWidth="50.0">
-                     <font>
-                        <Font size="19.0" />
-                     </font>
-                  </Text>
-                  <Text fx:id="text2_6" layoutX="300.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" visible="false" wrappingWidth="50.0">
-                     <font>
-                        <Font size="19.0" />
-                     </font>
-                  </Text>
-                  <Text fx:id="text2_7" layoutX="350.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" visible="false" wrappingWidth="50.0">
-                     <font>
-                        <Font size="19.0" />
-                     </font>
-                  </Text>
-                  <Text fx:id="text2_8" layoutX="400.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" visible="false" wrappingWidth="50.0">
-                     <font>
-                        <Font size="19.0" />
-                     </font>
-                  </Text>
-                  <Text fx:id="text2_9" layoutX="450.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" visible="false" wrappingWidth="50.0">
-                     <font>
-                        <Font size="19.0" />
-                     </font>
-                  </Text>
-                  <Text fx:id="text2_10" layoutX="500.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" visible="false" wrappingWidth="50.0">
-                     <font>
-                        <Font size="19.0" />
-                     </font>
-                  </Text>
-               </children>
-            </Pane>
-            <Button layoutX="94.0" layoutY="114.0" mnemonicParsing="false" onAction="#randomSortingLine" prefHeight="136.0" prefWidth="387.0" text="Button" />
-            <Button layoutX="94.0" layoutY="250.0" mnemonicParsing="false" onAction="#sorting" prefHeight="136.0" prefWidth="387.0" text="Button" />
-         </children>
-      </Pane>
+      <TabPane prefHeight="450.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="InsertSortInt">
+               <content>
+                  <Pane prefHeight="400.0" prefWidth="600.0">
+                     <children>
+                        <Pane layoutY="14.0" prefHeight="100.0" prefWidth="600.0">
+                           <children>
+                              <Rectangle fx:id="rect1_5" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="250.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect1_6" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="300.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect1_7" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="350.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect1_4" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="200.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect1_3" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="150.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect1_2" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="100.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect1_1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="50.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect1_8" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="400.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect1_9" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="450.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect1_10" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="500.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle fx:id="rect2_5" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="250.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="50.0" />
+                              <Rectangle fx:id="rect2_6" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="300.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="50.0" />
+                              <Rectangle fx:id="rect2_7" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="350.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="50.0" />
+                              <Rectangle fx:id="rect2_4" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="200.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="50.0" />
+                              <Rectangle fx:id="rect2_3" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="150.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="50.0" />
+                              <Rectangle fx:id="rect2_2" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="100.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="50.0" />
+                              <Rectangle fx:id="rect2_1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="50.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="50.0" />
+                              <Rectangle fx:id="rect2_8" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="400.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="50.0" />
+                              <Rectangle fx:id="rect2_9" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="450.0" layoutY="51.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="50.0" />
+                              <Rectangle fx:id="rect2_10" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="500.0" layoutY="51.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="50.0" />
+                              <Text fx:id="text1_1" layoutX="50.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" wrappingWidth="50.0">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="text1_2" layoutX="100.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" wrappingWidth="50.0">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="text1_3" layoutX="150.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" wrappingWidth="50.0">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="text1_4" layoutX="200.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" wrappingWidth="50.0">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="text1_5" layoutX="250.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" wrappingWidth="50.0">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="text1_6" layoutX="300.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" wrappingWidth="50.0">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="text1_7" layoutX="350.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" wrappingWidth="50.0">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="text1_8" layoutX="400.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" wrappingWidth="50.0">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="text1_9" layoutX="450.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" wrappingWidth="50.0">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="text1_10" layoutX="500.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" wrappingWidth="50.0">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="text2_1" layoutX="50.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" visible="false" wrappingWidth="50.0">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="text2_2" layoutX="100.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" visible="false" wrappingWidth="50.0">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="text2_3" layoutX="150.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" visible="false" wrappingWidth="50.0">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="text2_4" layoutX="200.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" visible="false" wrappingWidth="50.0">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="text2_5" layoutX="250.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" visible="false" wrappingWidth="50.0">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="text2_6" layoutX="300.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" visible="false" wrappingWidth="50.0">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="text2_7" layoutX="350.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" visible="false" wrappingWidth="50.0">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="text2_8" layoutX="400.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" visible="false" wrappingWidth="50.0">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="text2_9" layoutX="450.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" visible="false" wrappingWidth="50.0">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="text2_10" layoutX="500.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" textAlignment="CENTER" visible="false" wrappingWidth="50.0">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                        <Button fx:id="random" layoutX="47.0" layoutY="114.0" mnemonicParsing="false" onAction="#randomSortingLine" prefHeight="50.0" prefWidth="159.0" text="random arr[10]" />
+                        <Button fx:id="sort" layoutX="47.0" layoutY="180.0" mnemonicParsing="false" onAction="#sorting" prefHeight="50.0" prefWidth="159.0" text="sorting" />
+                        <Button fx:id="insert" layoutX="47.0" layoutY="247.0" mnemonicParsing="false" onAction="#insert" prefHeight="50.0" prefWidth="159.0" text="insert" />
+                        <TextField fx:id="writeField" layoutX="221.0" layoutY="257.0" prefHeight="31.0" prefWidth="158.0" text="6" />
+                        <Button fx:id="delete" layoutX="47.0" layoutY="312.0" mnemonicParsing="false" onAction="#delete" prefHeight="50.0" prefWidth="159.0" text="delete" />
+                        <TextField fx:id="deleteField" layoutX="222.0" layoutY="322.0" prefHeight="31.0" prefWidth="158.0" text="6" />
+                        <Button fx:id="rSort" layoutX="221.0" layoutY="180.0" mnemonicParsing="false" onAction="#reveseSorting" prefHeight="50.0" prefWidth="159.0" text="reveseSorting" />
+                        <Button fx:id="file" layoutX="222.0" layoutY="114.0" mnemonicParsing="false" onAction="#openFile" prefHeight="50.0" prefWidth="159.0" text="file" />
+                        <ImageView fx:id="picture" fitHeight="250.0" fitWidth="200.0" layoutX="388.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                           <image>
+                              <Image url="@409231.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </content>
+          </Tab>
+          <Tab text="InsertSortIntDynamicArray">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="list" layoutX="60.0" layoutY="110.0" prefHeight="267.0" prefWidth="461.0" />
+                        <Button layoutX="236.0" layoutY="37.0" mnemonicParsing="false" onAction="#sortExel" prefHeight="48.0" prefWidth="109.0" text="sort" />
+                        <Button layoutX="14.0" layoutY="37.0" mnemonicParsing="false" onAction="#openFileExel" prefHeight="48.0" prefWidth="109.0" text="fileExel" />
+                        <Button layoutX="457.0" layoutY="37.0" mnemonicParsing="false" onAction="#sortExelById" prefHeight="48.0" prefWidth="109.0" text="sortById" />
+                     </children></Pane>
+               </content>
+          </Tab>
+            <Tab text="FAQ" />
+        </tabs>
+      </TabPane>
    </children>
 </GridPane>
