@@ -4,11 +4,15 @@ import javafx.scene.control.ListView;
 
 
 public abstract class AbsSort {
-    public abstract void insert(Cell cell);
+    public abstract void insert(int x);
+
+    public abstract void delete(Integer x);
 
     public abstract void display(ListView list);
 
     public abstract void sort();
 
-    public abstract void sortById();
+    public abstract void rSort();
+
+    public abstract void clear();
 }
